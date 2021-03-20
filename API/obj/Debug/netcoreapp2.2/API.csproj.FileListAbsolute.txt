@@ -1,0 +1,14 @@
+F:\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.deps.json
+F:\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.json
+F:\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.dev.json
+F:\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.dll
+F:\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.pdb
+F:\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.csprojAssemblyReference.cache
+F:\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.csproj.CoreCompileInputs.cache
+F:\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cache
+F:\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cs
+F:\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.AssemblyInfoInputs.cache
+F:\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.AssemblyInfo.cs
+F:\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.RazorTargetAssemblyInfo.cache
+F:\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.dll
+F:\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.pdb
