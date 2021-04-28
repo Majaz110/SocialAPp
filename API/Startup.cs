@@ -12,6 +12,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using API.Interfaces;
+using API.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using API.Extensions;
+using API.Middleware;
 
 namespace API
 {
@@ -28,17 +35,25 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(options =>
+            services.AddApplicationServices(_config);
+            services.AddCors(options =>
             {
-                options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
+                options.AddPolicy("CorsPolicy",
+                    builder => builder
+                    .SetIsOriginAllowed((host) => true)
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
             });
+           // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddAuthorization();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddIdentityServices(_config);          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
+            /* if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -46,9 +61,13 @@ namespace API
             {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
-            }
-
+            } */
+            app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
+            //app.UseRouting();
+            app.UseCors("CorsPolicy");
+            app.UseAuthentication();
+           //app.useauth
             app.UseMvc();
         }
     }
