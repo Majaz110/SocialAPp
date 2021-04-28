@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using API.Extensions;
+using API.Middleware;
 
 namespace API
 {
@@ -52,7 +53,7 @@ namespace API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
+            /* if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -60,8 +61,8 @@ namespace API
             {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
-            }
-
+            } */
+            app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
             //app.UseRouting();
             app.UseCors("CorsPolicy");

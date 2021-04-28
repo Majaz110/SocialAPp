@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\AngularTraining\\API\\API\\API.csproj": {}
+    "F:\\ANG BCKUP\\AngularTraining\\API\\API\\API.csproj": {}
   },
   "projects": {
-    "F:\\AngularTraining\\API\\API\\API.csproj": {
+    "F:\\ANG BCKUP\\AngularTraining\\API\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\AngularTraining\\API\\API\\API.csproj",
+        "projectUniqueName": "F:\\ANG BCKUP\\AngularTraining\\API\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "F:\\AngularTraining\\API\\API\\API.csproj",
+        "projectPath": "F:\\ANG BCKUP\\AngularTraining\\API\\API\\API.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\AngularTraining\\API\\API\\obj\\",
+        "outputPath": "F:\\ANG BCKUP\\AngularTraining\\API\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "target": "Package",
               "version": "[2.2.1, )"
@@ -75,6 +83,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.7.1, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )"
             }
           },
           "imports": [

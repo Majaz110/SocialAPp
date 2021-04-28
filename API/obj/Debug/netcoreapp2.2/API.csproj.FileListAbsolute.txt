@@ -16,3 +16,22 @@ F:\AngularTraining\API\api\bin\Debug\netcoreapp2.2\appsettings.Development.json
 F:\AngularTraining\API\api\bin\Debug\netcoreapp2.2\appsettings.json
 F:\AngularTraining\API\api\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 F:\AngularTraining\API\api\obj\Debug\netcoreapp2.2\API.genruntimeconfig.cache
+F:\ANG BCKUP\AngularTraining\API\API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+F:\ANG BCKUP\AngularTraining\API\API\bin\Debug\netcoreapp2.2\appsettings.json
+F:\ANG BCKUP\AngularTraining\API\API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+F:\ANG BCKUP\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.deps.json
+F:\ANG BCKUP\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.json
+F:\ANG BCKUP\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.dev.json
+F:\ANG BCKUP\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.dll
+F:\ANG BCKUP\AngularTraining\API\API\bin\Debug\netcoreapp2.2\API.pdb
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.csprojAssemblyReference.cache
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.AssemblyInfoInputs.cache
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.AssemblyInfo.cs
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.csproj.CoreCompileInputs.cache
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cache
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cs
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.RazorTargetAssemblyInfo.cache
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.dll
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.pdb
+F:\ANG BCKUP\AngularTraining\API\API\obj\Debug\netcoreapp2.2\API.genruntimeconfig.cache
+F:\ANG BCKUP\AngularTraining\API\API\bin\Debug\netcoreapp2.2\Data\UserSeedData.json

@@ -1,5 +1,7 @@
 import { CloneVisitor } from '@angular/compiler/src/i18n/i18n_ast';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 import { User } from '../_models/user';
 import {AccountsService} from '../_services/accounts.service';
@@ -11,7 +13,7 @@ import {AccountsService} from '../_services/accounts.service';
 })
 export class NavComponent implements OnInit {
 
-  constructor(public accountService: AccountsService) { }
+  constructor(public accountService: AccountsService, private router: Router, private toastr: ToastrService) { }
 
   model: any={};
 
@@ -21,10 +23,11 @@ export class NavComponent implements OnInit {
   login()
   {
     this.accountService.login(this.model).subscribe(response =>{
-      console.log(response)
+      this.router.navigateByUrl('/members')
       },error =>
     {
-      console.log(error);
+      //console.log(error);
+      //this.toastr.error(error.error)
     }
     );     
   }
@@ -32,6 +35,7 @@ export class NavComponent implements OnInit {
   logout()
   {
     this.accountService.logout();
+    this.router.navigateByUrl('/')
   }
 
 }
